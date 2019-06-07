@@ -1,6 +1,6 @@
 const Config ={
     configBD:{
-        host: 'insert your host direction',
+        host: 'insert host direction',
         user: 'insert your username',
         password: 'insert your password',
         database: 'insert your database name',
