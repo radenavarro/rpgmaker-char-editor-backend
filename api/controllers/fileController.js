@@ -1,4 +1,4 @@
-const Controller = require('../controller');
+const Controller = require('./controller');
 const fs = require('fs');
 
 class fileController extends Controller {
@@ -7,8 +7,8 @@ class fileController extends Controller {
     }
     getFilesInDir(directory){
         fs.readdir(directory, (err, files) => {
-            // console.log(files.length);
-            return files.length;
+            if(err) this.returnJson(404, "No hay na")
+            if(files) this.returnJson(200, files)
         });
     }
 }
