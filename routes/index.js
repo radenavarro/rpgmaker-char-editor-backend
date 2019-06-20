@@ -9,6 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// GET data from config file
+
+/* GET number of common attribute images in each directory */
+
 router.get('/hair/length', function(req, res, next){
   let fileController = new FileController(req, res, next);
   fileController.getFilesInDir(imagePath + "hairs");
@@ -19,6 +23,11 @@ router.get('/skin/length', function(req, res, next){
   fileController.getFilesInDir(imagePath + 'skins');
 })
 
+router.get('/ears/length', function(req, res, next){
+  let fileController = new FileController(req, res, next);
+  fileController.getFilesInDir(imagePath + 'ears');
+})
+
 router.get('/head/length', function(req, res, next){
   let fileController = new FileController(req, res, next);
   fileController.getFilesInDir(imagePath + 'heads');
@@ -27,6 +36,11 @@ router.get('/head/length', function(req, res, next){
 router.get('/eyes/length', function(req, res, next){
   let fileController = new FileController(req, res, next);
   fileController.getFilesInDir(imagePath + 'eyes');
+})
+
+router.get('/eyecolor/length', function(req, res, next){
+  let fileController = new FileController(req, res, next);
+  fileController.getFilesInDir(imagePath + 'eyecolors');
 })
 
 router.get('/nose/length', function(req, res, next){

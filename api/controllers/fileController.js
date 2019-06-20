@@ -7,7 +7,7 @@ class fileController extends Controller {
     }
     getFilesInDir(directory){
         fs.readdir(directory, (err, files) => {
-            if(err) this.returnJson(404, "No hay na")
+            if(err) this.returnJson(404, "No se encontraron imagenes")
             if(files) this.returnJson(200, files)
         });
     }

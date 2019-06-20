@@ -1,0 +1,101 @@
+{
+    "character" : {
+        "bodies" : {
+            "1" : {
+                "graphic" : "body1.png",
+                "z-index" : 1,
+                "skin" : "caucasian",
+                "clothes" : {
+                    "1" : {
+                        "graphic" : "clothes1.png",
+                        "z-index" : 100
+                    }
+                }
+            },
+            "2" : {
+                "graphic" : "body2.png",
+                "z-index" : 1,
+                "skin" : "caucasian",
+                "clothes" : {
+                    "1" : {
+                        "graphic" : "clothes1.png",
+                        "z-index" : 100
+                    }
+                }
+            }
+        },
+        "complements" : {
+
+        },
+        "ears" : {
+            "1" : {
+                "graphic" : "ears1.png",
+                "z-index" : 50
+            },
+            "2" : {
+                "graphic" : "ears2.png",
+                "z-index" : 50
+            }
+        },
+        "eyebrows" : {
+
+        },
+        "eyebrowsColor" : {
+
+        },
+        "eyes" : {
+            "1" : {
+                "graphic" : "eyes1.png",
+                "z-index" : 40,
+                "color" : "black"
+            },
+            "2" : {
+                "graphic" : "eyes2.png",
+                "z-index" : 40,
+                "color" : "black"
+            }
+        },
+        "heads" : {
+            "1" : {
+                "graphic" : "head1.png",
+                "z-index" : 10,
+                "skin" : "caucasian",
+                "hairs" : {
+                    "1" : {
+                        "graphic" : "hair1.png",
+                        "z-index" : 80,
+                        "color" : "black"
+                    },
+                    "2" : {
+                        "graphic" : "hair2.png",
+                        "z-index" : 80,
+                        "color" : "black"
+                    }
+                },
+                "facials" : {
+
+                }
+            }
+        },
+        "mouths" : {
+            "1" : {
+                "graphic" : "mouth1.png",
+                "z-index" : 20
+            },
+            "2" : {
+                "graphic" : "mouth2.png",
+                "z-index" : 20
+            }
+        },
+        "noses" : {
+            "1" : {
+                "graphic" : "nose1.png",
+                "z-index" : 30
+            },
+            "2" : {
+                "graphic" : "nose2.png",
+                "z-index" : 30
+            }
+        }
+    }
+}
