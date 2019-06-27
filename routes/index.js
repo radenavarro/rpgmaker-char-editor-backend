@@ -3,6 +3,8 @@ var router = express.Router();
 const FileController = require('../api/controllers/fileController');
 var path = require('path');
 var imagePath = path.join(path.resolve(__dirname, '..'), '/public/images/');
+// Attribute config file
+const CharObj = require('../config/portraitConfig.json')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,6 +12,10 @@ router.get('/', function(req, res, next) {
 });
 
 // GET data from config file
+router.get('/config', function(req, res, next){
+  let fileController = new FileController(req, res, next)
+  fileController.returnJson(200, CharObj)
+})
 
 /* GET number of common attribute images in each directory */
 
